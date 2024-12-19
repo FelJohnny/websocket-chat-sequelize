@@ -1,6 +1,4 @@
----
-
-```markdown
+````markdown
 # Chat Frontend
 
 Frontend de uma aplicação de chat em tempo real utilizando React, TypeScript, Vite e Tailwind CSS. Este projeto consome a API de backend para autenticação, troca de mensagens entre usuários e gerenciamento de status online.
@@ -28,6 +26,7 @@ Frontend de uma aplicação de chat em tempo real utilizando React, TypeScript, 
 git clone https://github.com/seu-usuario/nome-do-repositorio.git
 cd nome-do-repositorio/frontend
 ```
+````
 
 ### **2. Instale as dependências | Install the dependencies**
 
