@@ -1,51 +1,127 @@
-# React + TypeScript + Vite
+---
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+```markdown
+# Chat Frontend
 
-Currently, two official plugins are available:
+Frontend de uma aplicação de chat em tempo real utilizando React, TypeScript, Vite e Tailwind CSS. Este projeto consome a API de backend para autenticação, troca de mensagens entre usuários e gerenciamento de status online.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 📋 Pré-requisitos | Prerequisites
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **Português:** Certifique-se de ter as seguintes ferramentas instaladas:
 
-- Configure the top-level `parserOptions` property like this:
+  - [Node.js](https://nodejs.org) (recomendado: versão LTS)
+  - [npm](https://www.npmjs.com/) ou [yarn](https://yarnpkg.com/)
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+- **English:** Make sure you have the following tools installed:
+  - [Node.js](https://nodejs.org) (recommended: LTS version)
+  - [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
+
+---
+
+## 🚀 Como rodar o projeto | How to run the project
+
+### **1. Clone o repositório | Clone the repository**
+
+```bash
+git clone https://github.com/seu-usuario/nome-do-repositorio.git
+cd nome-do-repositorio/frontend
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+### **2. Instale as dependências | Install the dependencies**
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+- **Português:** Use o comando abaixo para instalar as dependências:
+- **English:** Use the command below to install dependencies:
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+```bash
+npm install
+# ou | or
+yarn install
 ```
-# websocket-chat-sequelize
+
+### **3. Configure o arquivo `.env` | Configure the `.env` file**
+
+- **Português:** Renomeie o arquivo `.env.example` para `.env` e configure a variável `VITE_API_URL` com o endereço do backend (exemplo: `http://localhost:3000`).
+- **English:** Rename the `.env.example` file to `.env` and configure the `VITE_API_URL` variable with the backend address (e.g., `http://localhost:3000`).
+
+### **4. Inicie o servidor de desenvolvimento | Start the development server**
+
+- **Português:** Para iniciar o servidor de desenvolvimento, use:
+- **English:** To start the development server, use:
+
+```bash
+npm run dev
+# ou | or
+yarn dev
+```
+
+- **Português:** O projeto será iniciado no endereço: `http://localhost:5173`
+- **English:** The project will start at: `http://localhost:5173`
+
+---
+
+## 🛠️ Testando o projeto | Testing the project
+
+### **1. Acesse a aplicação no navegador | Access the application in your browser**
+
+- **Português:** Abra o navegador e acesse: `http://localhost:5173`
+- **English:** Open your browser and go to: `http://localhost:5173`
+
+### **2. Funcionalidades principais | Main features**
+
+- **Português:**
+  - Cadastro de usuário
+  - Login
+  - Troca de mensagens em tempo real com usuários online
+  - Interface responsiva
+- **English:**
+  - User registration
+  - Login
+  - Real-time messaging with online users
+  - Responsive interface
+
+---
+
+## 📦 Scripts disponíveis | Available scripts
+
+### **Iniciar o servidor de desenvolvimento | Start the development server**
+
+```bash
+npm run dev
+# ou | or
+yarn dev
+```
+
+### **Gerar uma versão de produção | Build the production version**
+
+```bash
+npm run build
+# ou | or
+yarn build
+```
+
+### **Executar o servidor local com a build de produção | Run locally with the production build**
+
+```bash
+npm run preview
+# ou | or
+yarn preview
+```
+
+---
+
+## 📄 Licença | License
+
+- **Português:** Este projeto é licenciado sob a licença MIT. Veja o arquivo `LICENSE` para mais detalhes.
+- **English:** This project is licensed under the MIT license. See the `LICENSE` file for more details.
+
+```
+
+---
+
+### **Como usar**
+1. Crie um arquivo chamado `README.md` na raiz do seu projeto frontend.
+2. Cole o conteúdo acima no arquivo.
+3. Salve e adicione ao seu repositório.
+```
